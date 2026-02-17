@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to our hairdressing salon!</title>
-  
-<!-- Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -18,15 +14,141 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/105183125" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8" />
+    <title>NextBot Barbershop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <style>
+      :root {
+        --primary: rgb(145, 85, 253);
+        --light-bg: #f5f3ff;
+        --dark: #1e1b2e;
+        --white: #ffffff;
+      }
 
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: var(--light-bg);
+        color: var(--dark);
+      }
 
+      header {
+        background: var(--primary);
+        color: var(--white);
+        padding: 25px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 32px;
+        letter-spacing: 1px;
+      }
+
+      .container {
+        display: flex;
+        min-height: 80vh;
+      }
+
+      main {
+        flex: 3;
+        padding: 40px;
+      }
+
+      main h2 {
+        color: var(--primary);
+      }
+
+      .cta-button {
+        background: var(--primary);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+        transition: 0.3s;
+      }
+
+      .cta-button:hover {
+        opacity: 0.85;
+      }
+
+      aside {
+        flex: 1;
+        background: white;
+        padding: 30px;
+        border-left: 3px solid var(--primary);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      aside h3 {
+        color: var(--primary);
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #ede9fe;
+        font-size: 14px;
+      }
+
+      .hero {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 30px; /* ← отступ от кнопки */
+      }
+
+      .hero img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, guest</h1>
+    <header>
+      <h1>NextBot Barbershop</h1>
+      <p>AI-powered grooming for the future 🤖</p>
+    </header>
 
-   
-<script src="https://dev.nextbot.ru/chat-widget-bundle-ver3.js"></script>
+    <div class="container">
+      <main>
+        <h2>О нас</h2>
+        <p>
+          NextBot Barbershop — это футуристический барбершоп, где
+          роботизированные мастера и AI-агенты создают идеальный стиль. Точность
+          алгоритмов + классика барберинга.
+        </p>
+
+        <button class="cta-button">Записаться онлайн</button>
+        <section class="hero">
+          <img
+            src="nextbot-barbershop.png"
+            alt="NextBot Barbershop AI Robots"
+          />
+        </section>
+      </main>
+
+      <aside>
+        <h3>Услуги</h3>
+        <ul>
+          <li>🤖 AI-стрижка</li>
+          <li>⚡ Робо-бритьё</li>
+          <li>💜 Дизайн бороды</li>
+        </ul>
+
+        <h3>Контакты</h3>
+        <p>📍 Москва</p>
+        <p>📞 +7 999 000-00-00</p>
+      </aside>
+    </div>
+
+    <footer>© 2026 NextBot Barbershop</footer>
+    <script src="https://dev.nextbot.ru/chat-widget-bundle-ver3.js"></script>
 <script>
   initializeChatWidget({
     agentId: "d6dcd006-4121-445d-b404-502090808a2d",
