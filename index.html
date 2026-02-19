@@ -114,7 +114,36 @@
       <h1>NextBot Barbershop</h1>
       <p>AI-powered grooming for the future 🤖</p>
     </header>
-
+<div style="width: 100%; height: 100%; display: flex; justify-content: center">
+  <div
+    id="NextBot_chatWidgetIframe_container"
+    style="
+      overflow: hidden;
+      padding: 0px;
+      width: 100%;
+      height: 500px;
+    "
+  >
+    <iframe
+      src="https://dev.nextbot.ru/chatWidgetIframe/chatWidgetIframe.html?agentId=9d7faac5-117b-45cd-901d-3d76413d4637&inputTextPlaceholder=Enter%20your%20message...&botIsTypingMessage=Rose%20is%20typing&chatWindowBgColor=%23b4e5ec&messageBotBgColor=%235b7eb8&messageBotTextColor=%23ffffff&messageUserBgColor=%23f5f5f5&messageUserTextColor=%23000000&borderRadius=10&avatarLink=&width=100&height=500&padding=0&startMessage=Hi!%20I'm%20Rose%2C%20your%20assistant.%20How%20can%20I%20help%20you%20today%3F&botIsTypingTextColor=%23000000&avatarNextbot=w1&avatarNextbotLink=https%3A%2F%2Frus.nextbot.ru%2FchatWidgetIframe%2Fimg%2Favatars%2Fw1min.png&chatWindowBgImage=bg2&chatWindowBgImageLink=https%3A%2F%2Frus.nextbot.ru%2FchatWidgetIframe%2Fimg%2Fbackgrounds%2Fbg2.png&questionButtons=[{'id':'migrated-1769413869711-0','text':'What bouquets and flowers do you have in your catalog?'},{'id':'migrated-1769413869711-1','text':'How much does delivery cost in the city and to other cities?'},{'id':'migrated-1769413869711-2','text':'How can I pay for the order — online or upon delivery?'}]&lang=en-US&fontLinkHref=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DRoboto%26display%3Dswap&fontCss=font-family%3A%20%22Roboto%22%2C%20sans-serif%3Bfont-optical-sizing%3A%20auto%3Bfont-weight%3A%20400%3Bfont-style%3A%20normal%3Bfont-variation-settings%3A%20'wdth'%20100%3B&sendButtonIcon=data%3Aimage%2Fsvg%2Bxml%3Bcharset%3DUTF-8%2C%253Csvg%2520width%253D'256px'%2520height%253D'256px'%2520viewBox%253D'0%25200%252024.00%252024.00'%2520fill%253D'none'%2520xmlns%253D'http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg'%2520stroke%253D'%25234e8aca'%2520transform%253D'matrix(1%252C%25200%252C%25200%252C%25201%252C%25200%252C%25200)rotate(0)'%253E%253Cg%2520id%253D'SVGRepo_bgCarrier'%2520stroke-width%253D'0'%253E%253C%252Fg%253E%253Cg%2520id%253D'SVGRepo_tracerCarrier'%2520stroke-linecap%253D'round'%2520stroke-linejoin%253D'round'%2520stroke%253D'%2523CCCCCC'%2520stroke-width%253D'0.144'%253E%253C%252Fg%253E%253Cg%2520id%253D'SVGRepo_iconCarrier'%253E%253Cpath%2520d%253D'M10.3009%252013.6949L20.102%25203.89742M10.5795%252014.1355L12.8019%252018.5804C13.339%252019.6545%252013.6075%252020.1916%252013.9458%252020.3356C14.2394%252020.4606%252014.575%252020.4379%252014.8492%252020.2747C15.1651%252020.0866%252015.3591%252019.5183%252015.7472%252018.3818L19.9463%25206.08434C20.2845%25205.09409%252020.4535%25204.59896%252020.3378%25204.27142C20.2371%25203.98648%252020.013%25203.76234%252019.7281%25203.66167C19.4005%25203.54595%252018.9054%25203.71502%252017.9151%25204.05315L5.61763%25208.2523C4.48114%25208.64037%25203.91289%25208.83441%25203.72478%25209.15032C3.56153%25209.42447%25203.53891%25209.76007%25203.66389%252010.0536C3.80791%252010.3919%25204.34498%252010.6605%25205.41912%252011.1975L9.86397%252013.42C10.041%252013.5085%252010.1295%252013.5527%252010.2061%252013.6118C10.2742%252013.6643%252010.3352%252013.7253%252010.3876%252013.7933C10.4468%252013.87%252010.491%252013.9585%252010.5795%252014.1355Z'%2520stroke%253D'%252314badb'%2520stroke-width%253D'0.576'%2520stroke-linecap%253D'round'%2520stroke-linejoin%253D'round'%253E%253C%252Fpath%253E%253C%252Fg%253E%253C%252Fsvg%253E&useCustomSendIcon=true&svgRotation=0&"
+      id="NextBot_chatWidgetIframe"
+      width="100%"
+      height="100%"
+      title="NextBox chatWidget"
+      style="border: none;border-radius: 10px;"
+    ></iframe>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const iframe = document.getElementById('NextBot_chatWidgetIframe');
+    if (iframe) {
+      const currentSrc = iframe.src;
+      const separator = currentSrc.includes('?') ? '&' : '?';
+      iframe.src = currentSrc + separator + 'parentLocationHref=' + encodeURIComponent(window.location.href);
+    }
+  });
+</script>
     <div class="container">
       <main>
         <h2>О нас</h2>
